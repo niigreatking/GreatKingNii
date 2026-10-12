@@ -3,7 +3,7 @@
 # To solve for gradient, iterate through the data points using 
 # new weight and bias values and then take the average of the partial derivatives.
 
-def update_weight(radio, sales, weight, bias, learning_rate):
+def update_weights(radio, sales, weight, bias, learning_rate):
     weight_deriv = 0 
     bias_deriv = 0
     companies = len(radio)

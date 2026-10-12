@@ -23,7 +23,7 @@ plt.plot(x_range, model.predict(x_range.reshape(-1, 1)), color="blue", linewidth
 
 plt.title("Line Regression Line")
 plt.xlabel("Radio")
-plt.ylabel("Label")
+plt.ylabel("Sales")
 plt.xlim(-10, 60)
 plt.ylim(-5,30)
 plt.tight_layout()
