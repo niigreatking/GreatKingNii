@@ -16,7 +16,7 @@ def update_weights(radio, sales, weight, bias, learning_rate):
         bias_deriv += -2 * (sales[i] - (weight*radio[i] + bias))
         
     # Doing subtraction because the derivativespoints in upward direction
-    weight -= (weight_deriv / companies) / learning_rate
-    bias -= (bias_deriv / companies) / learning_rate
+    weight -= (weight_deriv / companies) * learning_rate
+    bias -= (bias_deriv / companies) * learning_rate
 
     return weight, bias 
